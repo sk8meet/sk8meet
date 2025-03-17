@@ -19,3 +19,22 @@ The project is thoroughly documented to provide a clear understanding of its req
 - [Architecture Document](documents/architecture.md) - Comprehensive technical architecture and design decisions
 - [Development Plan](documents/development-plan.md) - Implementation strategy and timeline
 - [Development Environment Guide](documents/dev-environment-guide.md) - Detailed setup instructions for developers
+
+## Project Structure
+
+The current project structure:
+
+```text
+sk8meet/
+├── frontend/                      # React/Next.js frontend application
+│   ├── package.json               # Frontend dependencies
+│   └── tsconfig.json              # TypeScript configuration for frontend
+│
+├── backend/                       # Node.js/Express backend application
+│   ├── package.json               # Backend dependencies
+│   └── tsconfig.json              # TypeScript configuration for backend
+│
+└── documents/                     # Project documentation
+```
+
+The project will use separate code workspaces for frontend and backend development.
