@@ -1,0 +1,40 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      - ./:/workspace:cached
+      - frontend_node_modules:/workspace/frontend/node_modules
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env.development
+    depends_on:
+      - backend
+    command: npm run dev
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      - ./:/workspace:cached
+      - backend_node_modules:/workspace/backend/node_modules
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env.development
+    command: npm run dev
+
+volumes:
+  frontend_node_modules:
+  backend_node_modules:

@@ -1,0 +1,33 @@
+{
+  "name": "Sk8Meet Frontend Development",
+  "dockerComposeFile": "../../docker-compose.yml",
+  "service": "frontend",
+  "workspaceFolder": "/workspace/frontend",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/node_modules": true
+    },
+    "roo-code.apiKey": "${localEnv:ROO_CODE_API_KEY}"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
+    "humao.rest-client",
+    "ms-vscode.vscode-typescript-next",
+    "streetsidesoftware.code-spell-checker",
+    "bierner.markdown-preview-mermaid",
+    "davidanson.vscode-markdownlint",
+    "rooveterinaryinc.roo-cline"
+  ],
+  "forwardPorts": [3001],
+  "postCreateCommand": "echo 'Frontend Dev container is ready!'",
+  "remoteUser": "node"
+}

@@ -1,0 +1,9 @@
+# Project-specific dictionary for sk8meet_2
+# Add custom words below, one per line
+fridaynightskate
+LFNS
+londonstreetskates
+replan
+sk8meet
+skateable
+upcomming
