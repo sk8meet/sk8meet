@@ -31,6 +31,7 @@ sk8meet/
 │   └── tsconfig.json              # TypeScript configuration for frontend
 │
 ├── backend/                       # Node.js/Express backend application
+│   ├── src/                       # Backend source code
 │   ├── package.json               # Backend dependencies
 │   └── tsconfig.json              # TypeScript configuration for backend
 │
