@@ -10,6 +10,12 @@ For a detailed overview of the project vision, see [Vision Document](documents/v
 
 ## Documentation
 
+The project is thoroughly documented to provide a clear understanding of its requirements, architecture, and implementation plan:
+
 - [Vision Document](documents/vision.md) - High-level non-technical overview of the project's goals and benefits
 - [Requirements Summary](documents/requirements_summary.md) - Detailed breakdown of functional and non-functional requirements
 - [User Stories](documents/user_stories.md) - User-centred requirements and MVP feature set
+- [System Context](documents/system_context.md) - System boundaries and interactions with external systems
+- [Architecture Document](documents/architecture.md) - Comprehensive technical architecture and design decisions
+- [Development Plan](documents/development-plan.md) - Implementation strategy and timeline
+- [Development Environment Guide](documents/dev-environment-guide.md) - Detailed setup instructions for developers
