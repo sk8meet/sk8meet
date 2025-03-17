@@ -1,0 +1,32 @@
+{
+  "cSpell.language": "en-GB",
+  "cSpell.customDictionaries": {
+    "project-words": {
+      "name": "Project dictionary",
+      "path": "${workspaceRoot}/dictionary.txt",
+      "description": "Project-specific dictionary",
+      "addWords": true
+    }
+  },
+  "cSpell.enabled": true,
+  "cSpell.flagWords": [
+    "marshall: marshal",
+    "marshalls: marshals",
+    "root: route"
+  ],
+
+  // Markdown formatting settings
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "always"
+    }
+  },
+  "markdownlint.config": {
+    "default": true,
+    "MD007": { "indent": 4 },
+    "MD033": false,
+    "MD024": { "siblings_only": true }
+  }
+}
