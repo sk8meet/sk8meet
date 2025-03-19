@@ -1,7 +1,9 @@
 # Project-specific dictionary for sk8meet_2
 # Add custom words below, one per line
+Cleanup
 fridaynightskate
 LFNS
+linters
 londonstreetskates
 replan
 sk8meet

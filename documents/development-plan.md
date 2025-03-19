@@ -240,22 +240,21 @@ graph LR
     H --> I[Production Deployment]
 ```
 
+For detailed contribution guidelines including our pull request process and commit message format, please refer to our [Contributing Guide](../CONTRIBUTING.md).
+
+The development workflow follows these key stages:
+
 1. **Local Development**
    - Developers work in containerized environment
    - Hot reloading for rapid iteration
    - Local database with seed data
 
-2. **Version Control**
-   - Feature branch workflow
-   - Pull requests for code review
-   - Automated checks before merging
-
-3. **Continuous Integration**
+2. **Continuous Integration**
    - Automated testing on pull requests
    - Linting and code quality checks
    - Security scanning
 
-4. **Continuous Deployment**
+3. **Continuous Deployment**
    - Automated deployment to staging
    - User acceptance testing
    - Production deployment with approval

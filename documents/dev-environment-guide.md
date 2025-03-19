@@ -464,7 +464,7 @@ The Sk8Meet architecture is designed as a modular monolith with clear separation
 
 ### 1. Backend Module Structure
 
-```
+```text
 backend/
 ├── src/
 │   ├── modules/
@@ -1013,6 +1013,8 @@ volumes:
    - Frontend: <http://localhost:3000>
    - Backend API: <http://localhost:4000>
    - Database: postgresql://postgres:postgres@localhost:5432/sk8meet
+
+For details on our contribution process, including pull request guidelines and commit message format, please refer to our [Contributing Guide](../CONTRIBUTING.md).
 
 ## Troubleshooting Common Issues
 

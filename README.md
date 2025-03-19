@@ -20,6 +20,10 @@ The project is thoroughly documented to provide a clear understanding of its req
 - [Development Plan](documents/development-plan.md) - Implementation strategy and timeline
 - [Development Environment Guide](documents/dev-environment-guide.md) - Detailed setup instructions for developers
 
+## Contributing
+
+We welcome contributions to Sk8Meet! Please see our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct, development workflow, and pull request process.
+
 ## Development Setup
 
 Sk8Meet uses a containerized development approach to ensure consistent environments across all platforms (Windows, Linux, macOS) with minimal software installation.
