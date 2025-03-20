@@ -1,7 +1,9 @@
 name: Task
 description: A specific, implementable piece of work
-title: "[TASK] "
+title: "[TASK] <title>"
 labels: ["task"]
+projects: ["sk8meet/1"]
+type: "Task"
 body:
   - type: markdown
     attributes:
