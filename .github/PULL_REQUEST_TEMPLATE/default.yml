@@ -1,0 +1,90 @@
+name: Pull Request
+description: Submit a pull request to contribute to the project
+title: "[TYPE]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this pull request!
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a clear and concise description of the changes
+      placeholder: Explain what changes you've made and why
+    validations:
+      required: true
+      
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issue(s)
+      description: Link to the related issue(s) this PR addresses
+      placeholder: "Fixes #123, Resolves #456"
+      
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Type of Change
+      multiple: true
+      options:
+        - Bug fix (non-breaking change that fixes an issue)
+        - New feature (non-breaking change that adds functionality)
+        - Breaking change
+        - Documentation update
+        - Refactoring (no functional changes)
+        - Performance improvement
+        - Test updates
+        - CI/CD pipeline changes
+        - Other
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: components-affected
+    attributes:
+      label: Component(s) Affected
+      multiple: true
+      options:
+        - Frontend
+        - Backend
+        - Documentation
+        - DevOps/Infrastructure
+        - Other
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: testing
+    attributes:
+      label: Testing
+      options:
+        - label: Frontend unit tests
+        - label: Frontend integration tests
+        - label: Backend unit tests
+        - label: Backend integration tests
+        - label: API endpoint testing
+        - label: Manual testing completed
+          
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your changes
+      
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: My code follows the style guidelines of this project
+          required: true
+        - label: I have performed a self-review of my own code
+          required: true
+        - label: I have made corresponding documentation changes
+        - label: My changes generate no new warnings or errors
+          required: true
+        - label: I have added tests that prove my fix is effective
+        - label: All tests pass locally with my changes
+          required: true
