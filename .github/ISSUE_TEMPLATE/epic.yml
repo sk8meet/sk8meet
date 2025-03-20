@@ -1,7 +1,9 @@
 name: Epic
 description: A large feature or theme of work that can be broken down into smaller tasks
-title: "[EPIC] "
+title: "[EPIC] <title>"
 labels: ["epic"]
+projects: ["sk8meet/1"]
+type: "Epic"
 body:
   - type: markdown
     attributes:
@@ -15,18 +17,6 @@ body:
       label: Description
       description: Provide a comprehensive description of this epic
       placeholder: This epic covers the implementation of...
-    validations:
-      required: true
-      
-  - type: textarea
-    id: objectives
-    attributes:
-      label: Objectives
-      description: What are the main goals of this epic?
-      placeholder: |
-        - Implement feature X
-        - Ensure compatibility with Y
-        - Improve performance of Z
     validations:
       required: true
       

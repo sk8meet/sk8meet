@@ -1,7 +1,9 @@
 name: Bug Report
 description: Report a bug or unexpected behavior
-title: "[BUG] "
+title: "[BUG] <title>"
 labels: ["bug"]
+projects: ["sk8meet/1"]
+type: "Bug"
 body:
   - type: markdown
     attributes:
