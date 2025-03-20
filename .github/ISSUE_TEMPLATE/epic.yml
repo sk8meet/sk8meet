@@ -1,0 +1,83 @@
+name: Epic
+description: A large feature or theme of work that can be broken down into smaller tasks
+title: "[EPIC] "
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Epic Description
+        An epic represents a significant feature from our development plan that will be broken down into smaller tasks.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a comprehensive description of this epic
+      placeholder: This epic covers the implementation of...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Objectives
+      description: What are the main goals of this epic?
+      placeholder: |
+        - Implement feature X
+        - Ensure compatibility with Y
+        - Improve performance of Z
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Development Phase
+      description: Which phase of the development plan does this epic belong to?
+      options:
+        - "Phase 1: Development Environment Setup"
+        - "Phase 2: Core Platform Implementation"
+        - "Phase 3: Marshal and Community Features"
+        - "Phase 4: Integration and Deployment"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What are the high-level criteria for this epic to be considered complete?
+      placeholder: |
+        - [ ] All related tasks are completed
+        - [ ] Feature X is fully implemented and tested
+        - [ ] Documentation is updated
+    validations:
+      required: true
+      
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: List the tasks that will be part of this epic (can be updated later)
+      placeholder: |
+        - [ ] Task 1: Create...
+        - [ ] Task 2: Implement...
+        - [ ] Task 3: Test...
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: area
+    attributes:
+      label: Technical Area
+      description: Which part of the system does this epic primarily affect?
+      options:
+        - Frontend
+        - Backend
+        - DevOps
+        - Database
+        - Full Stack
+        - Documentation
+    validations:
+      required: true
