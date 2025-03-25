@@ -6,7 +6,7 @@ COPY package*.json ./
 # Development stage
 FROM base AS development
 # Install Git for version control
-RUN apk add --no-cache git
+RUN apk add --no-cache git bash
 RUN npm install
 COPY . .
 EXPOSE 3000
