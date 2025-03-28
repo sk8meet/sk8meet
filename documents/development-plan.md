@@ -4,6 +4,8 @@
 
 This document outlines the recommended development approach, technology stack, and implementation strategy for the Sk8Meet platform. Based on the project requirements and architecture documents, we've designed a plan that minimizes software installation on developer machines while ensuring consistent development environments across all platforms (Windows, Linux, macOS).
 
+For a comprehensive understanding of our testing methodology, tools, and approach, please refer to our [Detailed Testing Strategy](./detailed_testing_strategy.md), which provides an in-depth overview of our testing principles and implementation.
+
 ## Development Approach
 
 ### Core Principles

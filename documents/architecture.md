@@ -4,6 +4,8 @@
 
 Sk8Meet is a comprehensive platform designed to transform how street skating events are organized, promoted, and experienced. This document outlines the architectural approach for implementing Sk8Meet as a mobile-first, cost-effective solution that meets the needs of skating communities worldwide.
 
+For a detailed understanding of our testing strategy, tools, and approach, please refer to our [Detailed Testing Strategy](./detailed_testing_strategy.md), which provides comprehensive insights into our testing methodology.
+
 The architecture is designed with the following key principles in mind:
 
 - Simplicity and understandability for developers with various experience levels
