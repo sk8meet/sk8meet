@@ -118,6 +118,9 @@ sk8meet/
 │   ├── backend.code-workspace     # VS Code workspace configuration for backend
 │   ├── Dockerfile                 # Backend container configuration
 │   ├── src/                       # Backend source code
+│   ├── __tests__/                 # Test directories
+│   │   ├── integration/           # Integration test suite
+│   │   └── unit/                  # Unit test suite
 │   ├── package.json               # Backend dependencies
 │   └── tsconfig.json              # TypeScript configuration for backend
 │

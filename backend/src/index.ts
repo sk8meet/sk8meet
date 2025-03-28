@@ -43,16 +43,17 @@ app.use(
 
 // Function to start server only if not already running
 function startServer() {
-  // Start server
-  app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-    console.log(`Health check: http://localhost:${port}/health`);
-  });
+  // Only start server if not in test environment
+  if (process.env.NODE_ENV !== "test") {
+    // Start server
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+      console.log(`Health check: http://localhost:${port}/health`);
+    });
+  }
 }
 
-// Automatically start server
-if (process.env.NODE_ENV !== "test") {
-  startServer();
-}
+startServer();
 
+export { startServer };
 export default app;
