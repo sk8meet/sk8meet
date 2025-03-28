@@ -127,3 +127,29 @@ sk8meet/
 ```
 
 The project uses separate code workspaces for frontend and backend development, each configured to access resources at the root level of the project. This approach allows developers to work in isolated environments tailored to their specific needs while still maintaining access to shared resources like documentation.
+
+## Running Tests
+
+### Backend Tests
+
+The backend uses Jest for testing. To run tests, navigate to the `backend/` directory and use the following npm scripts:
+
+- Run tests once:
+
+  ```bash
+  npm test
+  ```
+
+- Run tests in watch mode (automatically re-run tests on file changes):
+
+  ```bash
+  npm run test:watch
+  ```
+
+- Generate test coverage report:
+
+  ```bash
+  npm run test:coverage
+  ```
+
+Note: These commands should be run inside the backend development container to ensure the correct environment and dependencies.
