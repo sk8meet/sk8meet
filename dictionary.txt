@@ -1,6 +1,7 @@
 # Project-specific dictionary for sk8meet_2
 # Add custom words below, one per line
 Cleanup
+devcontainers
 fridaynightskate
 LFNS
 linters

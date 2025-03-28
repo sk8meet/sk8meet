@@ -9,11 +9,7 @@
     }
   },
   "cSpell.enabled": true,
-  "cSpell.flagWords": [
-    "marshall: marshal",
-    "marshalls: marshals",
-    "root: route"
-  ],
+  "cSpell.flagWords": ["marshall: marshal", "marshalls: marshals"],
 
   // Markdown formatting settings
   "[markdown]": {

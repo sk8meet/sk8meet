@@ -13,5 +13,10 @@ module.exports = {
     '<rootDir>/src/__tests__/integration/**/*.test.ts'
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  setupFiles: ['dotenv/config']
+  setupFiles: [
+    'dotenv/config'
+  ],
+  setupFilesAfterEnv: [
+    '<rootDir>/jest.sinon.setup.js'
+  ]
 };
