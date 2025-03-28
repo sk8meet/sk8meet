@@ -8,6 +8,10 @@ module.exports = {
       tsconfig: '<rootDir>/tsconfig.json'
     }]
   },
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
+  testMatch: [
+    '<rootDir>/src/__tests__/unit/**/*.test.ts',
+    '<rootDir>/src/__tests__/integration/**/*.test.ts'
+  ],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  setupFiles: ['dotenv/config']
 };
